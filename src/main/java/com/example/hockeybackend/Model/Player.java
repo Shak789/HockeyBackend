@@ -1,9 +1,14 @@
 package com.example.hockeybackend.Model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "PlayerData")
 public class Player {
+
+    @Id
+    private String id; // Use String as the type for MongoDB ObjectId
+
     private String firstName;
     private String lastName;
     private String position;
