@@ -5,9 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.example.hockeybackend.Model.Player;
 import com.example.hockeybackend.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
 
 import java.io.IOException;
@@ -28,5 +26,10 @@ public class PlayerController {
     @GetMapping("/players")
     public List<Player> getPlayerData() {
         return repository.findAll();
+    }
+
+    @PostMapping("/player")
+    public Player addPlayerData(@RequestBody Player player) {
+        return repository.save(player);
     }
 }
