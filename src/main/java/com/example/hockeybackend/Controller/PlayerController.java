@@ -47,4 +47,26 @@ public class PlayerController {
             return null;
         }
     }
+
+    @PutMapping("/{id}")
+    public Player updatePlayer(@PathVariable String id, @RequestBody Player updatedPlayer) {
+        Player existingPlayer = repository.findById(id).orElse(null);
+
+        if (existingPlayer != null) {
+            existingPlayer.setFirstName(updatedPlayer.getFirstName());
+            existingPlayer.setLastName(updatedPlayer.getLastName());
+            existingPlayer.setPosition(updatedPlayer.getPosition());
+            existingPlayer.setJerseyNumber(updatedPlayer.getJerseyNumber());
+            existingPlayer.setBirthDate(updatedPlayer.getBirthDate());
+            existingPlayer.setNationality(updatedPlayer.getNationality());
+            existingPlayer.setHeight(updatedPlayer.getHeight());
+            existingPlayer.setWeight(updatedPlayer.getWeight());
+            existingPlayer.setTeam(updatedPlayer.getTeam());
+            existingPlayer.setInjured(updatedPlayer.isInjured());
+            existingPlayer.setStatistics(updatedPlayer.getStatistics());
+            return repository.save(existingPlayer);
+        } else {
+            return null;
+        }
+    }
 }
