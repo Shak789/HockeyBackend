@@ -8,11 +8,11 @@
 - Team
 
 **Parameters**
-- `item` : One of the aformentionned `Player` fields
+- `item` : One of the aforementioned `Player` fields
 
 ### <span class="label label-api">GET</span>  `/Sort/{entry}`
 > Sorts players in the league database in descending order based on the following `PlayerStatistics` object fields:
-- GamesPlayed
+- Games Played
 - Goals
 - Assists
 - Points
@@ -20,9 +20,9 @@
 - Save Percentage
 
 **Parameters**
-- `entry` : One of the aformentionned `PlayerStatistics` fields
+- `entry` : One of the aforementioned `PlayerStatistics` fields
 
-**Sample Output for Sorting Based on Gaols**
+**Sample Output for Sorting Based on Goals**
 ```JSON
 [
   {

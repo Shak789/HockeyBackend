@@ -1,6 +1,6 @@
 ## HTTP Methods
 ### <span class="label label-api">GET</span>  `/getPlayerData`
-> Retrieves player data for the league.
+> Retrieves player data from the league database.
 
 **Sample Output**
 ```JSON
@@ -68,7 +68,7 @@
 ]
 ```
 ### <span class="label label-api">POST</span>  `/getPlayerData`
-> Adds a player to the league's database.
+> Adds a player to the league database.
 
 **Parameters**
 - `Player` : an object of type Player with the following fields:
@@ -119,11 +119,11 @@
 }
 ```
 ### <span class="label label-api">PUT</span> `/updatePlayer/{id}`
-> Updates a player's info
+> Updates a player's info.
 
 **Parameters**
   -  `id` is the _id of a specific player
-  -  `updatedPlayer ` is a Player object that is used to replace the previous fields 
+  -  `updatedPlayer` is a Player object that is used to replace the previous fields 
 
 ### <span class="label label-api">DELETE</span>  `/deletePlayer/{id}`
 > Deletes the player from the league database.

@@ -1,10 +1,10 @@
-# Hockey League API
+# Hockey League REST API
 
 ## Overview
-Data is an important part of the game of hockey. Whether it is basic player information (e.g. age, height, weight), scoring statistics or advanced analytics, data helps fans and team staff to develop a greater understanding of player performance. This data is readily available online for the National Hockey League (NHL), professional hockey leauges, and 
-<a href="https://goaliecoaches.com/understanding-junior-hockey-path-nhl">junior</a>. Even statistics for AAA minor leagues, which is <a href="https://goaliecoaches.com/understanding-junior-hockey-path-nhl">one level below junior</a> can usually be found online.
+Data is an important part of the game of hockey. Whether it is basic player information (e.g. age, height, weight), scoring statistics or advanced analytics, data helps fans and team staff to develop a greater understanding of player performance. This data is readily available online for the National Hockey League (NHL), professional hockey leagues, and 
+junior leagues</a>. Even statistics for AAA minor leagues, which is <a href="https://goaliecoaches.com/understanding-junior-hockey-path-nhl">one level below junior</a>, can usually be found online.
 
-Due to resource constraints, statistics for smaller hockey leagues are not often tracked, thus preventing fans and coaches to accurately assess player performance. Therefore, I developed this API, which uses standard HTTP metohds to allow smaller leagues to easily manage player data. It also integrates custom methods to provide more options for leagues to track and analzye data. The API can be integrated with frontend applciations, which provides a user-friendly experience for leagues with limited techincal resources.
+Due to resource constraints, statistics for smaller hockey leagues are not often tracked, thus preventing fans and coaches from accurately assessing player performance. Therefore, I developed this REST API, which uses standard HTTP methods (e.g. GET, POST, PUT, DELETE) to allow leagues to easily manage player data. It also implements custom methods to provide more options for leagues to track and analyze data. The API can be integrated with frontend applications, which provides a user-friendly experience for leagues that have limited technical resources.
 
 ## Key Features
 - **Player Information:** Access player profiles, including basic details such as team, jersey number, position and injury status. You can also view information from player bios such as nationality, age, height, and weight.
@@ -55,30 +55,17 @@ For detailed information on dependencies, refer to [this file](Dependencies.md).
 
 - **Java:** The core programming language used for developing the backend logic of the application.
 
-- **Spring Boot:** Spring Boot simplifies the creation of the API through automatic configuratons. This enables easy implementation of HTTP and custom methods.
+- **Spring Boot:** Spring Boot simplifies the creation of the REST API through automatic configurations. This enables easy implementation of HTTP and custom methods.
   
-- **MongoDB:** The project uses MongoDB as the database to store and retrieve player-related data. MongoDB's NoSQL approach provides efficient managment of complex and frequently changing player datasests.
+- **MongoDB:** The project uses MongoDB as the database to store and retrieve player-related data. MongoDB's NoSQL approach provides efficient management of complex and frequently changing player datasets.
 
 - **Gradle (or Maven):** The build automation tool Gradle (or Maven) is employed to manage project dependencies.
 
-- **Swagger UI** To test HTTP and custom methods without using a frontend applicaiton.
+- **Swagger UI** To test HTTP and custom methods without using a frontend application.
 
 ## HTTP Methods
 Documentation for the HTTP methods can be found in [this file](https://github.com/Shak789/HockeyBackend/blob/master/HTTP%20Methods.md#http-methods).
 
 ## Custom methods
-### <span class="label label-api">GET</span>  `/search{item}`
-> Searches for a player in the league database that matches one of the following `Player` object fields:
-- firstName
-- LastName
-- Position
-- Nationality
-- Team
-  
+Documentation for the custom methods can be found in [this file](https://github.com/Shak789/HockeyBackend/blob/master/Custom%20Methods.md#http-methods).
 
-
-  
-
-
-  
-  
