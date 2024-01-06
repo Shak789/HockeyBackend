@@ -1,4 +1,6 @@
 # Hockey League API
+
+## Overview
 Data is an important part of the game of hockey. Whether it is basic player information (e.g. age, height, weight), scoring statistics or advanced analytics, data helps fans and team staff to develop a greater understanding of player performance. This data is readily available online for the National Hockey League (NHL), professional hockey leauges, and 
 <a href="https://goaliecoaches.com/understanding-junior-hockey-path-nhl">junior</a>. Even statistics for AAA minor leagues, which is <a href="https://goaliecoaches.com/understanding-junior-hockey-path-nhl">one level below junior</a> can usually be found online.
 
