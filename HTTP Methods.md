@@ -120,7 +120,7 @@
 ### <span class="label label-api">PUT</span> `/updatePlayer/{id}`
 > Updates a player's info
 
-**URL Parameters**
+**Parameters**
   -  `id` is the _id of a specific player
   -  `updatedPlayer ` is a Player object that is used to replace the previous fields 
 
