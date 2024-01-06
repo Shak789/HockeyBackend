@@ -1,4 +1,4 @@
-##HTTP Methods##
+## HTTP Methods
 ### <span class="label label-api">GET</span>  `/getPlayerData`
 > Retrieves player data for the league.
 
