@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.example.hockeybackend.Model.Player;
 import com.example.hockeybackend.Repository.PlayerRepository;
 import com.example.hockeybackend.Repository.SearchRepository;
+import com.example.hockeybackend.Repository.SortRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
@@ -19,6 +20,8 @@ public class PlayerController {
     PlayerRepository repository;
     @Autowired
     SearchRepository searchrepo;
+    @Autowired
+    SortRepository sortrepo;
 
     @ApiIgnore
     @RequestMapping(value = "/")
@@ -71,8 +74,13 @@ public class PlayerController {
         }
     }
 
-    @GetMapping("/players/{item}")
+    @GetMapping("/players/search/{item}")
     public List<Player> Search(@PathVariable String item) {
         return searchrepo.searchItem(item);
+    }
+
+    @GetMapping("/players/sort/{entry}")
+    public List<Player> Sort(@PathVariable String entry) {
+        return sortrepo.sortItem(entry);
     }
 }
