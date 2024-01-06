@@ -66,6 +66,17 @@ For detailed information on dependencies, refer to [this file](Dependencies.md).
 ## HTTP Methods
 Documentation for the HTTP methods can be found in [this file](https://github.com/Shak789/HockeyBackend/blob/master/HTTP%20Methods.md#http-methods).
 
+## Custom methods
+### <span class="label label-api">GET</span>  `/search{item}`
+> Searches for a player in the league database that matches one of the following `Player` object fields:
+- firstName
+- LastName
+- Position
+- Nationality
+- Team
+  
+
+
   
 
 
