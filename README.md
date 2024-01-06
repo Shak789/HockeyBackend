@@ -62,7 +62,7 @@ For detailed information on dependencies, refer to [this file](Dependencies.md).
 - **Swagger UI** To test HTTP and custom methods without using a frontend applicaiton.
 
 ## HTTP Methods
-Documentation for the HTTP methods can be found in [this file](HTTP Methods.md).
+Documentation for the HTTP methods can be found in [this file](https://github.com/Shak789/HockeyBackend/blob/master/HTTP%20Methods.md#http-methods).
 
   
 
