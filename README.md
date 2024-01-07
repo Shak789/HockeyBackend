@@ -61,9 +61,7 @@ For detailed information on dependencies, refer to [this file](Dependencies.md).
 
 - **Gradle (or Maven):** The build automation tool Gradle (or Maven) is employed to manage project dependencies.
 
-- **Swagger UI:** To test HTTP and custom methods without using a frontend application.
-
-<img src="Swagger_UI.png" alt="Quick Evaluation" width="375px" height="200px" />
+- **[Swagger UI](Swagger_UI.png)** To test HTTP and custom methods without using a frontend application.
 
 ## HTTP Methods
 Documentation for the HTTP methods can be found in [this file](https://github.com/Shak789/HockeyBackend/blob/master/HTTP%20Methods.md#http-methods).
